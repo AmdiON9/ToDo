@@ -4,7 +4,6 @@ window.addEventListener("load", () => {
     const form = document.querySelector("form");
     const tasksDiv = document.querySelector("#tasks");
 
-    checkStorage();
 
     form.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -20,7 +19,6 @@ window.addEventListener("load", () => {
             return;
         }
 
-        saveElement(formInput);
 
         const taskDiv = document.createElement("div");
         taskDiv.classList.add("task");
@@ -71,31 +69,5 @@ window.addEventListener("load", () => {
 
 })
 
-function createDiv() {
-    
-}
-
-function saveElement(elem) {
-
-    sessionStorage.setItem("")
-}
-
-function checkStorage() {
-
-    const sessionCount = sessionStorage.length;
-
-    if(sessionCount>0) {
-        
-        for(let i = 0; i < sessionCount; i++) {
-            let name = sessionStorage.key(i);
-            console.log(sessionStorage.getItem(name))
-        }
 
 
-
-    } else {
-        console.log("empty")
-    }
-
-
-}
