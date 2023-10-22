@@ -1,0 +1,107 @@
+:root {
+    --darkest: #313131;
+    --darker:  #414141;
+    --dark: #525252;
+    --red: #CA3E47;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+    color: snow;
+}
+
+body {
+    background-image: linear-gradient(to top, var(--darkest), var(--dark));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    width: 600px;
+    min-height: 400px;
+    margin-top: 50px;
+    border-radius: 2rem;
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+section h2 {
+    margin:  10px 0 10px 40px;
+}
+
+#form input[type="text"]{
+    font-size: 1rem;
+    padding: 1rem;
+    width: 300px;
+    border-radius: 1rem;
+    background-color: var(--darkest);
+}
+
+#form input[type="submit"]{
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right, #A32F80, #e6c403);
+    cursor: pointer;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task{
+    font-size: 20px;
+    width: 530px;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: var(--darkest);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.task .content input {
+    font-size: 1.125rem;
+    width: 350px;
+}
+
+button {
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.save{
+    background-image: linear-gradient(to right, #A32F80, #03e6c8) ;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: pointer;
+}
+
+.delete {
+    color: #DA0037;
+    cursor: pointer;
+}
